@@ -1,11 +1,13 @@
 ---
 name: android-lib-lookup
 description: >-
-  Query Android/Gradle project dependency classes and APIs from cached AAR/JAR files.
-  Use when encountering unknown classes from remote Maven dependencies, needing to
-  understand a library's API, or writing code that involves AAR/JAR dependency classes.
-  Supports lookup by class name, package, library, and fuzzy search.
-  Works with both Groovy (build.gradle) and Kotlin DSL (build.gradle.kts).
+  Query Android/Gradle dependency classes and APIs from cached AAR/JAR files.
+  Auto-index all Maven dependencies, lookup class by name, browse packages, search APIs.
+  Use when encountering unknown Java/Kotlin classes from remote dependencies, needing
+  library API signatures, decompiling AAR classes, or writing code with third-party SDKs.
+  Supports build.gradle (Groovy) and build.gradle.kts (Kotlin DSL).
+  Works with implementation, api, compileOnly, kapt, ksp, annotationProcessor.
+  Zero external dependencies — pure Python standard library.
 ---
 
 # Android Dependency Class Lookup
